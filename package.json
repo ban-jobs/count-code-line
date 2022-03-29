@@ -1,35 +1,48 @@
 {
-    "name": "count-code-line",
-    "version": "0.0.4",
-    "description": "Count lines and characters for your project",
-    "bin": "bin/count-code.js",
-    "main": "lib/count.js",
-    "author": "theajack <contact@theajack.com>",
-    "license": "MIT",
-    "keywords": [
-        "count code line",
-        "计算代码行数"
-    ],
-    "scripts": {},
-    "devDependencies": {
-        "@babel/core": "^7.5.5",
-        "@babel/preset-env": "^7.5.5",
-        "@commitlint/cli": "^8.2.0",
-        "@commitlint/config-conventional": "^8.2.0",
-        "@typescript-eslint/parser": "^2.14.0",
-        "babel-eslint": "^10.0.3",
-        "eslint": "^6.8.0",
-        "husky": "^3.1.0"
-    },
-    "husky": {
-        "hooks": {
-            "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-        }
-    },
-    "dependencies": {
-        "chalk": "^4.1.0",
-        "commander": "^7.1.0",
-        "jschardet": "^2.2.1",
-        "single-line-log": "^1.1.2"
+  "name": "ccl",
+  "version": "0.0.5",
+  "description": "Count lines and characters for your project",
+  "bin": {
+    "count-code-line": "bin/count-code.js"
+  },
+  "main": "lib/count.js",
+  "author": "theajack <contact@theajack.com>",
+  "license": "MIT",
+  "keywords": [
+    "count code line",
+    "计算代码行数"
+  ],
+  "scripts": {},
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@commitlint/cli": "^8.2.0",
+    "@commitlint/config-conventional": "^8.2.0",
+    "@typescript-eslint/parser": "^2.14.0",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.8.0",
+    "husky": "^3.1.0"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
+  },
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "commander": "^7.1.0",
+    "jschardet": "^2.2.1",
+    "single-line-log": "^1.1.2"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ban-jobs/count-code-line.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ban-jobs/count-code-line/issues"
+  },
+  "homepage": "https://github.com/ban-jobs/count-code-line#readme"
 }
